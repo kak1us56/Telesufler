@@ -8,31 +8,53 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="body">
     <div class="wrapper">
-        <main>
-            <a href="#end" class="btn go-to">Начать</a>
-            <div class="block-text">
-                <p class="text">
-                    Так. Бути чи не бути - ось питання.
-В чiм бiльше гiдностi: терпіти мовчки Важкі удари навiсної долі
-Чи стати збройно проти моря мук I край покласти їм борнею? Вмерти - Заснуть, не більш. І знати, що скінчиться Які судились тiлу. Цей кінець
-Сердечний біль і тисяча турбот,
-Жаданий був би кожному. Померти Заснути. Може, й бачити сновиддя? У цьому й перепона. Що приснитись Нам може у смертельнiм снi, коли Вантаж земної суєти ми скинем? Оце єдине спонукає зносить Усi нещастя довгого життя; Інакше - хто ж би стерпів глум часу, Ярмо гнобителів, пиху зухвальців,
-Зневажену любов, суди неправ
-Нахабство влади, причіпки й знущання, Що гідний зазнає від недостойних, - Хто б це терпів, коли удар кинджала Усе кiнчає? Хто б це став потіти,
-Вгинаючись під тягарем життєвим,
-Якби не страх перед незнаним чимось
-У тій незвіданій країнi, звiдки
-Ще не вертався жоден подорожній?
-Миритись легше нам з вiдомим лихом,
-Анiж до невiдомого спішити;
-Так роздум робить боягузів з нас,
-Рішучості природжений рум'янець
-Блідою барвою вкриває думка, I збочує величний намiр кожен, Імення вчинку тратячи. Та досить! Офелiє! В своїй молитві, німфо, Згадай мої гріхи!
-                </p>
+        <main class="main">
+            <div class="page1">
+                <h1 class="page1__header">Online telesufler</h1>
+                <form action="#" class="form">
+                    <textarea id="textarea" cols="130" rows="10" class="form__textarea" placeholder="Напишите или вставте текст для запроса..."></textarea>
+                    <button type="submit" id="submit" class="form__submit">
+                        <p>Prompt!</p>
+                    </button>
+                </form>
             </div>
-            <div id="end" class="end-block"></div>
+            <div class="page2">
+                <div id="start" class="start"></div>
+                <section class="section__header">
+                    <div class="header">
+                        <button class="btn-play">
+                            <a href="#end" id="play" class="btn-play__link go-to">Play</a>
+                        </button>
+                        <button id="btnFullscreen" class="btn-fullscreen">
+                            <p>Полноэкранный режим</p>
+                        </button>
+                        <div class="speed-block">
+                            <div class="speed-block__label">
+                                <label for="speed">Скорость: </label>
+                            </div>
+                            <input class="speed" min="1" value="100" type="number" name="speed" id="speed">
+                        </div>
+                        <div class="fz-block">
+                            <div class="fz-block__label">
+                                <label for="fz">Шрифт: </label>
+                            </div>
+                            <input type="number" min="1" value="200" class="fz-block__fz" name="fz" id="fontsize">
+                            <div id="assign" class="assign-block">
+                                <p>Присвоить</p>
+                            </div>
+                        </div>
+                        <div class="go-up-block">
+                            <a href="#start" class="go-up-block__link go-up">Наверх</a>
+                        </div>
+                    </div>
+                </section>
+                <div class="block-text">
+                    <p id="text" class="text"></p>
+                </div>
+                <div id="end" class="end-block"></div>
+            </div>
         </main>
     </div>
 
